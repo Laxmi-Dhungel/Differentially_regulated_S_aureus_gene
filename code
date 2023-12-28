@@ -18,19 +18,19 @@ for line in f:
     
     for i in virulence_factor_Adhesins:
         if i in field[0]:
-            count_adhesins_list.append(i)
+            count_adhesins_list.append(field[0])
     for i in virulence_factor_evasion_host_defense:
         if i in field[0]:
-            count_evasion_list.append(i)
+            count_evasion_list.append(field[0])
     for i in virulence_factor_toxins:
         if i in field[0]:
-            count_toxins_list.append(i)
+            count_toxins_list.append(field[0])
     for i in virulence_factor_enzymes_proteins:
         if i in field[0]:
-            count_enzymes_proteins_list.append(i)
+            count_enzymes_proteins_list.append(field[0])
     for i in TCS:
         if i in field[0]:
-            count_TCS_list.append(i)
+            count_TCS_list.append(field[0])
             
             
 print("The genes regulated related to different categories: ")
