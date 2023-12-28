@@ -15,7 +15,6 @@ The user will be asked to input the file name to check for virulent related gene
 
 <img width="291" alt="csv_file" src="https://github.com/Laxmi-Dhungel/Differentially_regulated_S_aureus_gene/assets/154451345/0afa8311-5634-4699-97bd-dc675cb029ab">
 
-<img width="469" alt="dif_reg_genes" src="https://github.com/Laxmi-Dhungel/Differentially_regulated_S_aureus_gene/assets/154451345/2d6d2533-d227-4ae1-a8eb-1cb53e066f2a">
-
+<img width="469" alt="dif_reg_genes" src="https://github.com/Laxmi-Dhungel/Differentially_regulated_S_aureus_gene/assets/154451345/668d0839-e631-4a13-80dd-5a880efd7fc8">
 
 
