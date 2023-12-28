@@ -1,0 +1,39 @@
+#Checking S. aureus virulence genes regulated in a csv file
+virulence_factor_Adhesins=['aaa','atl','bap','bbp','clfA','clfB','cna','coa','eap','map','ebh','ebpS','efb','emp','fnbA','fnbB','icaA','icaD','icaB','icaC','isdA','isdB','isdC','isdH','pls','sasA','sasB','sasC','sasD','sasF','sasG','sasH','sasK','sraP','sbi','sdrC','sdrD','sdrE','sdrH','spa','vwp']
+virulence_factor_evasion_host_defense=['apsS','apsR','apsX','aur','cap','catA','ahpC','chp','crtO','crtP','crtQ','crtM','crtN','dltA','dltB','dltC','dltD','ecb','efb','flr','graR','graS','ltaS','mprF','oatA','sak','scn','sdrE','spa','ssl10','ssl11','ssl5','ssl7','tar','trx','trxR']
+virulence_factor_toxins=['eta','etb','etd','fmt','hla','hlb','hld','hlg','lukD','lukE','lukM','lukG','lukH','lukA','lukB','lukS','lukF','lukP','lukV','psm','sea','see','seg','sej','ser','set','selK','selQ','selU','selX','ssl10','ssl11','ssl5','ssl7','tst']
+virulence_factor_enzymes_proteins=['ahpC','arc','opp-3','catA','eno','geh','lip','mntA','mntB','mntC','mntH','plc','scpA','sspA','sspB']
+TCS=['lyt','aps','gra','sae','arl','srr','hpt','vra','agr','kdp','hss','nre','wal','yyc','vic','air','bce','bra','pho']
+count_TCS_list=[]
+count_adhesins_list=[]
+count_evasion_list=[]
+count_toxins_list=[]
+count_enzymes_proteins_list=[]
+inf=input("Please enter the file name: ")
+f=open(inf,'r')
+f.readline()
+for line in f:
+    line=line.strip()
+    field=line.split(',')
+    
+    for i in virulence_factor_Adhesins:
+        if i in field[0]:
+            count_adhesins_list.append(i)
+    for i in virulence_factor_evasion_host_defense:
+        if i in field[0]:
+            count_evasion_list.append(i)
+    for i in virulence_factor_toxins:
+        if i in field[0]:
+            count_toxins_list.append(i)
+    for i in virulence_factor_enzymes_proteins:
+        if i in field[0]:
+            count_enzymes_proteins_list.append(i)
+    for i in TCS:
+        if i in field[0]:
+            count_TCS_list.append(i)
+            
+            
+print("The genes regulated related to different categories: ")
+print('adhesins: ' +  str(count_adhesins_list) + '\n' + 'evasion: '  + str(count_evasion_list) + '\n' + 'toxins: ' + str(count_toxins_list) + '\n' + 'enzymes: ' + str(count_enzymes_proteins_list) + '\n' + 'TCS: ' + str(count_TCS_list))
+
+f.close()
